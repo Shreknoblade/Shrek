@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+    <style type="text/css">
+        *, *:before, *:after{
+            font-family: "trebuchet MS", sans-serif;
+            text-align: center;
+            font-size: 1cm;
+        }
+        .button {
+            width: 16%;
+            padding:10px 6px;
+            font-size: 22px ;
+        }
+        .picture {
+            position: absolute;
+            top: 5%;
+            left: 7.5%;
+
+        }
+        audio{
+    height:42px;
+}
+    </style>
+      <title>The Name Project</title>
+   </head>
+   <body style="background-color:#333333;">
+      <h1 style="color:white;" >The Name Project</h1>
+      <h3 style="color:white;" >Click The Name That You Would Like To Know More About</h3>
+   </body>
+    <div>           
+        <button id="button1" class="button">Home</button>
+        <button id="button2" class="button">Jackson</button>
+        <button id="button3" class="button">Jason</button>
+        <button id="button4" class="button">Joanna</button>
+        <button id="button5" class="button">Susanna</button>
+        <button id="button6" class="button">Sylvia</button>
+    </div>
+
+        <hr>
+
+        <!-- -->
+
+       <h2 style="color:white;" id="heading">Home</h2>
+      <p style="color:white;" id="info">This website was created using CSS as well as Java script. There is well over 100 lines of code and a few weeks of work put into this project. This website is all about some of the members of my family, as well as my name. It will be showing the history of our names, the meaning of them, statistics about the name, other famous people with the name as well as so much more. The goal of this website it to educate people about the history of their names. </p>
+
+    <img src="TheNameProject.png" alt="TheNameProject" width="75" height="75" class= "picture">
+    </body>
+
+    <script>
+
+        // Create button functionality to manipulate text being displayed
+            
+        document.getElementById("button1").onclick = function() {
+
+            const element = document.getElementById("heading");
+            element.innerHTML = "Home"
+    
+
+            const info = document.getElementById("info");
+            info.innerHTML = `This website was created using CSS as well as Java script. There is well over 100 lines of code and a few weeks of work put into this project. This website is all about some of the members of my family, as well as my name. It will be showing the history of our names, the meaning of them, statistics about the name, other famous people with the name as well as so much more. The goal of this website it to educate people about the history of their names. `;
+
+        }//end onclick     
+
+        document.getElementById("button2").onclick = function() {
+
+            const element = document.getElementById("heading");
+            element.innerHTML = `Jackson
+        <audio controls>
+        <source src="jackson.mp3" type="audio/mpeg">
+        </audio>
+`
+
+            const info = document.getElementById("info");
+            info.innerHTML = "At its peak, the name Jackson was the 16th most popular name in the USA, but currently, it is the 17th most popular; at the names worst, in 1969, the name Jackson was the 831st most popular name in USA. The name originates from Englanad and Scotland, meaning Son of Jack. Some famous people with this name were Jackson Pollock, all of the Jackson Five, Samuel L Jackson and so many more people.";
+
+        }//end onclick     
+
+        document.getElementById("button3").onclick = function() {
+
+            const element = document.getElementById("heading");
+            element.innerHTML = `Jason
+        <audio controls>
+        <source src="jason.mp3" type="audio/mpeg">
+        </audio>
+`;
+
+            const info = document.getElementById("info");
+            info.innerHTML = "At its peak, from 1974-1978, the name Jason was the 2nd most popular name in the USA, but currently, it is the 119th most popular; at the names worst, in 1899, the name Jason was recorded to have been used 0 times. The name has greek origination, it means healer. This is from the greek work iaomai, which means to heal. Some famous people with this name were Jason Momoa, Jason Derulo, Jason Isaacs and many others.";
+
+        }//end onclick       
+    
+        document.getElementById("button4").onclick = function() {
+
+           const element = document.getElementById("heading");
+            element.innerHTML = `Joanna
+        <audio controls>
+        <source src="Joanna.mp3" type="audio/mpeg">
+        </audio>
+`;
+
+            const info = document.getElementById("info");
+            info.innerHTML = "At its peak, in 1984, the name Joanna was the 88th most popular name in the USA, but currently, it is the 257th most popular; at the names worst, in 1907, the name Joanna was the 666th most popular name in USA. The name is of latin origin, and it means God Is Gracious. Some famous people with this name were JoJo (Birth name Joanna), Joanna Lumley, Joanna Garcia and many others.";
+
+        }//end onclick     
+
+       document.getElementById("button5").onclick = function() {
+
+            const element = document.getElementById("heading");
+            element.innerHTML = `Susanna
+        <audio controls>
+        <source src="Susanna.mp3" type="audio/mpeg">
+        </audio>
+`;
+
+            const info = document.getElementById("info");
+            info.innerHTML = "At its peak, in 1884, the name Susanna was the 336th most popular name in the USA, but currently, it is not even in the top 1000 most popular names in the U.S.A; the name is currently worse than it has been in history. The name is of Persian and Egyptian Origin, it means lotus flower in egyptian and lily in persian. Some famous people with the name Susanna are Susanna Hoffs, Susanna Reid, Susanna Kallur and many other people in history.";
+
+        }//end onclick
+
+        document.getElementById("button6").onclick = function() {
+
+            const element = document.getElementById("heading");
+            element.innerHTML = `Sylvia
+        <audio controls>
+        <source src="sylvia.mp3" type="audio/mpeg">
+        </audio>
+`;
+
+            const info = document.getElementById("info");
+            info.innerHTML = "At its peak, in 1937, the name Jason was the 50th most popular name in the USA, but currently, it is the 504th most popular; at the names worst, in 2010, the name Sylvia was the 557th most popular name in USA. The name has greek origination, it means healer. The name Sylvia has a latin/french origin. It means forest. Some famous people with this name were Sylvia Plath, Sylvia Matthews Burwell, Sylvia Pankhurst and many others.";
+
+        }//end onclick     
+    </script>
+
+</html>
+
+</html>
